@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="400dp"
+    android:layout_margin="6dp"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="421dp"
+        android:layout_height="209dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/md_theme_light_outline"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_season" />
+
+    <TextView
+        android:id="@+id/txt_season"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Season 2"
+        android:textColor="@color/md_theme_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/txt_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dog Adventure"
+        android:textColor="@color/md_theme_dark_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
